@@ -1,0 +1,71 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+body {
+  margin-top: 20px;
+}
+
+#icon_1,
+#icon_2,
+#icon_3 {
+  padding: 10px;
+}
+
+.navBar {
+  width: 320px;
+  margin-right: 50px;
+}
+
+.general_form {
+  width: 630px;
+  .startDate,
+  .endDate {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: block;
+    width: 300px;
+  }
+}
+
+.endInput {
+  position: absolute;
+  top: 19px;
+  left: 700px;
+}
+
+.from,
+.to,
+.amenities,
+#amenities {
+  width: 630px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#buttons {
+  position: absolute;
+  left: 860px;
+  margin-top: 7px;
+}
+
+#dropdownMenuButton2 {
+  display: block;
+  width: 250px;
+  background-color:#4594ee;
+}
+
+.dropdownSecond_1 {
+  position: absolute;
+  left: 640px;
+  top: 187px;
+}
+
+.dropdownSecond {
+  position: absolute;
+  left: 640px;
+  top: 190px;
+}
+
+#car-cities,
+#cities {
+  width: 100px;
+}
