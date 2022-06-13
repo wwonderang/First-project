@@ -5,6 +5,7 @@ fetch(countryList)
 .then(response => {
 
   if(response.ok) {
+    
     return response.json();
 }
   throw new Error('Network response was not ok.'); 
@@ -19,11 +20,11 @@ fetch(countryList)
 
 document.querySelector('#countries').addEventListener('change', function() {
   let newCity = dataCountry[this.value];
+
   for(let iterator of newCity) {
     let cityOption = document.createElement('option');
     let cities = document.getElementById('cities');
     let carCities = document.getElementById('car-cities');
-
     cityOption.innerHTML = iterator;
     cities.appendChild(cityOption);
     carCities.appendChild(cityOption.cloneNode(true));

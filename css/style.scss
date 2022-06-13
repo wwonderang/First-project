@@ -17,8 +17,8 @@ body {
 
 .general_form {
   width: 630px;
-  .startDate,
-  .endDate {
+  #startDateFlights,
+  #endDateCars {
     margin-top: 15px;
     margin-bottom: 15px;
     display: block;
@@ -69,3 +69,5 @@ body {
 #cities {
   width: 100px;
 }
+
+
