@@ -2,7 +2,7 @@ import './style.scss';
 import './img/airplane.png';
 let key;
 
-let countryList = 'https://raw.githubu/russ666/all-countries-and-cities-json/master/countries.json';
+let countryList = 'https://raw.githubusercontent.com/russ666/all-countries-and-cities-json/master/countries.json';
 fetch(countryList)
 .then(response => {
 
