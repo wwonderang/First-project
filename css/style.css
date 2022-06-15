@@ -12022,4 +12022,10 @@ body {
   left: 640px;
   top: 190px;
 }
+
+header {
+  position: absolute;
+  right: 0px;
+}
+
 /*# sourceMappingURL=style.css.map */

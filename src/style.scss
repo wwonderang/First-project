@@ -18,6 +18,10 @@ body {
 .general_form {
   width: 630px;
   #startDateFlights,
+  #endDateFlights,
+  #startDateHotels,
+  #endDateHotels,
+  #startDateCars,
   #endDateCars {
     margin-top: 15px;
     margin-bottom: 15px;
@@ -70,4 +74,7 @@ body {
   width: 100px;
 }
 
-
+header {
+  position: absolute;
+  right: 0px;
+}

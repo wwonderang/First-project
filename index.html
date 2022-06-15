@@ -10,8 +10,12 @@
 </head>
 <body>
 
+  <header>
+    <img class="airplane" src="./src//img/airplane.png" alt="airplane" style="height: 150px; position: absolute;
+    right: 90px; border-radius: 5px">
+  </header>
+
   <body class="d-flex align-items-start">
-    
     <div class="navBar">
       <div class="nav flex-column nav-pills me-3" id="v-pills-tabv-pills-tabv-pills-tab" role="tablist" aria-orientation="vertical">
       
@@ -29,10 +33,10 @@
 <!-- Flights -->
         <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
           <h6>Start Date</h6>
-          <input type="date" id="startDateFlights" name="date" placeholder="mm/dd/yyyy" min="" required>
+          <input type="date" id="startDateFlights" name="date" placeholder="mm/dd/yyyy" min="" onchange="validateDate()" required>
           <div class="endInput">
             <h6>End Date</h6>
-            <input type="date" id="endDateFlights" name="end date" placeholder="mm/dd/yyyy" min="" required>
+            <input type="date" id="endDateFlights" name="end date" placeholder="mm/dd/yyyy" min="" onchange="validateDate()" required>
           </div>
           <h6>From</h6>
           <input type="text" name="from" class="from">
@@ -99,9 +103,9 @@
   integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" 
   crossorigin="anonymous"></script>
 
-  <script src="../js/date.js"></script>
-  <script src="../js/request.js"></script>
-  <script src="../js/clearBtn.js"></script>
+  <script src="js/date.js"></script>
+  <script src="js/request.js"></script>
+  <script src="js/clearBtn.js"></script>
 
   </body>
 </html>

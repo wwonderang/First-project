@@ -13,6 +13,7 @@ fetch(countryList)
   for(key in dataCountry) {
   let newCountry = document.createElement('option');
   newCountry.value = key;
+  console.log(newCountry.value);
   newCountry.innerHTML = key;
   document.querySelector('#countries').appendChild(newCountry);
   document.querySelector('#car-countries').appendChild(newCountry.cloneNode(true));
@@ -31,4 +32,3 @@ document.querySelector('#countries').addEventListener('change', function() {
   }
 });
 });
-
