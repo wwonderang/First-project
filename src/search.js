@@ -61,11 +61,43 @@ let minEndDate = year + '-' + month + '-' + endDate;
 console.log(minEndDate);
 
 document.querySelector('#startDateFlights').setAttribute('min', minDate);
-document.querySelector('#endDateFlights').setAttribute('min', minEndDate);
 document.querySelector('#startDateHotels').setAttribute('min', minDate);
-document.querySelector('#endDateHotels').setAttribute('min', minEndDate);
 document.querySelector('#startDateCars').setAttribute('min', minDate);
-document.querySelector('#endDateCars').setAttribute('min', minEndDate);
+
+let startFlights = document.getElementById('startDateFlights');
+let endFlights = document.getElementById('endDateFlights');
+let startHotels = document.getElementById('startDateHotels');
+let endHotels = document.getElementById('endDateHotels');
+let startCars = document.getElementById('startDateCars');
+let endCars = document.getElementById('endDateCars');
+
+startFlights.addEventListener('change', function() {
+    if (startFlights.value) {
+        endFlights.min = startFlights.value;
+}}, false);
+endFlights.addEventListener('change', function() {
+    if (endFlights.value) {
+        startFlights.max = endFlights.value;
+}}, false);
+
+startHotels.addEventListener('change', function() {
+  if (startHotels.value) {
+      endHotels.min = startHotels.value;
+}}, false);
+endHotels.addEventListener('change', function() {
+  if (endHotels.value) {
+      startHotels.max = endHotels.value;
+}}, false);
+
+startCars.addEventListener('change', function() {
+  if (startCars.value) {
+      endCars.min = startCars.value;
+}}, false);
+endHotels.addEventListener('change', function() {
+  if (endCars.value) {
+      startCars.max = endCars.value;
+}}, false);
+
 
 let clear = document.getElementById('clearBtn');
 clear.addEventListener('click', () => {
