@@ -66,3 +66,23 @@ document.querySelector('#startDateHotels').setAttribute('min', minDate);
 document.querySelector('#endDateHotels').setAttribute('min', minEndDate);
 document.querySelector('#startDateCars').setAttribute('min', minDate);
 document.querySelector('#endDateCars').setAttribute('min', minEndDate);
+
+let clear = document.getElementById('clearBtn');
+clear.addEventListener('click', () => {
+  document.querySelector('#startDateFlights').value = '';
+  document.querySelector('#endDateFlights').value = '';
+  document.querySelector('#flights-cities').value = '';
+  document.querySelector('#flights-countries').value = '';
+  document.querySelector('#startDateHotels').value = '';
+  document.querySelector('#endDateHotels').value = '';
+  document.querySelector('#startDateFlights').value = '';
+  document.querySelector('#amenities').value = '';
+  document.querySelector('#startDateFlights').value = '';
+  document.querySelector('#endDateFlights').value = '';
+  document.querySelector('#countries').value = '';
+  document.querySelector('#cities').value = '';
+  document.querySelector('#startDateCars').value = '';
+  document.querySelector('#endDateCars').value = '';
+  document.querySelector('#car-countries').value = '';
+  document.querySelector('#car-cities').value = '';
+});
