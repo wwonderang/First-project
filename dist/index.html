@@ -7,7 +7,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-</head>
+<script defer src="search.js"></script><link href="search.css" rel="stylesheet"></head>
 <body>
 
   <header>
@@ -33,19 +33,15 @@
 <!-- Flights -->
         <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
           <h6>Start Date</h6>
-          <input type="date" id="startDateFlights" name="date" placeholder="mm/dd/yyyy" min="" required>
+          <input type="date" id="startDateFlights" name="date" placeholder="mm/dd/yyyy" min="" onchange="validateDate()" required>
           <div class="endInput">
             <h6>End Date</h6>
-            <input type="date" id="endDateFlights" name="end date" placeholder="mm/dd/yyyy" min="" required>
+            <input type="date" id="endDateFlights" name="end date" placeholder="mm/dd/yyyy" min="" onchange="validateDate()" required>
           </div>
           <h6>From</h6>
-          <select class="btn btn-secondary dropdown-toggle" name="country" id="flights-countries">
-            <option value="country">Choose country</option>
-          </select>
+          <input type="text" name="from" class="from">
           <h6>To</h6>
-          <select class="btn btn-secondary dropdown-toggle" name="city" id="flights-cities">
-            <option value="city">Choose city</option>
-          </select>
+          <input type="text" name="to" class="to">
         </div>
   <!-- Hotels -->
         <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">

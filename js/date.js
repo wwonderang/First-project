@@ -27,12 +27,3 @@ document.querySelector('#startDateHotels').setAttribute('min', minDate);
 document.querySelector('#endDateHotels').setAttribute('min', minEndDate);
 document.querySelector('#startDateCars').setAttribute('min', minDate);
 document.querySelector('#endDateCars').setAttribute('min', minEndDate);
-
-function validateDate() {
-  document.querySelector('#startDateFlights').setAttribute('min', minDate);
-  const startDateFlights = document.getElementById('startDateFlights').value;
-  const endDateFlights = document.getElementById('endDateFlights').value;
-  if(Date.parse(startDateFlights > endDateFlights)) {
-    alert('error');
-  }
-}
