@@ -21,7 +21,7 @@ fetch(countryList)
   document.querySelector('#car-countries').appendChild(newCountry.cloneNode(true));
 }
 
-document.querySelector('#countries').addEventListener('change', function() {
+document.querySelector('#flights-countries').addEventListener('change', function() {
   let newCity = dataCountry[this.value];
 
   for(let iterator of newCity) {
